@@ -1,6 +1,176 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f1c40f;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body p {
+  font-family: 'montserrat';
+  color: white;
+}
+
+body h1 {
+  font-size: 70px;
+}
+
+body h2 {
+  font-size: 50px;
+}
+
+body h3 {
+  font-size: 40px;
+}
+
+body h4 {
+  font-size: 35px;
+}
+
+body .wrapper {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.parallax-viewport {
+  margin: 0 auto;
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  position: relative;
+}
+
+.parallax-viewport .parallax-layer {
+  width: 901px;
+  height: 114;
+  position: absolute;
+  left: 0;
+}
+
+.parallax-viewport .parallax-layer#one {
+  top: 78%;
+  left: -15%;
+  -webkit-animation: motionInOceanOne 5s infinite alternate;
+  animation: motionInOceanOne 5s infinite alternate;
+}
+
+.parallax-viewport .parallax-layer#two {
+  left: -25%;
+  top: 73%;
+  -webkit-animation: motionInOceanTwo 7s infinite alternate;
+  animation: motionInOceanTwo 7s infinite alternate;
+}
+
+.parallax-viewport .parallax-layer#three {
+  left: -20%;
+  top: 69%;
+  -webkit-animation: motionInOceanThree 11s infinite alternate;
+  animation: motionInOceanThree 11s infinite alternate;
+}
+
+.parallax-viewport .parallax-layer#four {
+  top: 65%;
+  left: -5%;
+  -webkit-animation: motionInOceanFour 22s infinite alternate;
+  animation: motionInOceanFour 22s infinite alternate;
+}
+
+.parallax-viewport .mask {
+  position: absolute;
+  background-color: #f1c40f;
+  width: 500px;
+  height: 555px;
+}
+
+.parallax-viewport .mask.Left {
+  left: -71%;
+}
+
+.parallax-viewport .mask.Right {
+  right: -71%;
+}
+
+@-webkit-keyframes motionInOceanOne {
+  0% {
+    left: -25%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@keyframes motionInOceanOne {
+  0% {
+    left: -25%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@-webkit-keyframes motionInOceanTwo {
+  0% {
+    left: -33%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@keyframes motionInOceanTwo {
+  0% {
+    left: -33%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@-webkit-keyframes motionInOceanThree {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@keyframes motionInOceanThree {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@-webkit-keyframes motionInOceanFour {
+  0% {
+    left: -44%;
+  }
+
+  100% {
+    left: -1%;
+  }
+}
+
+@keyframes motionInOceanFour {
+  0% {
+    left: -44%;
+  }
+
+  100% {
+    left: -1%;
+  }
 }
 
 #container {
@@ -8,7 +178,9 @@ body {
 }
 
 section {
-  padding: 5% 15%;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -40,6 +212,6 @@ p.copyDrew {
   font-weight: 700;
 }
 
-svg {
+.skrollr svg {
   margin: 0 auto;
 }

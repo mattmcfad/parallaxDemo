@@ -1,14 +1,147 @@
+$bg-Color: #f1c40f;
+
+
 body {
 	margin: 0;
 	padding: 0;
+	background-color: $bg-Color;
+
+	h1,h2,h3,h4,p {
+		font-family: 'montserrat';
+		color: white;
+	}
+
+	h1 {
+		font-size: 70px;
+
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+	h4 {
+		font-size: 35px;
+	}
+
+	.wrapper {
+		text-align: center;
+		width: 900px;
+		margin: 0 auto;
+	}
 }
+
+.parallax-viewport {
+	margin: 0 auto;
+	background-color: white;
+	width: 700px;
+	height: 500px;
+	position: relative;
+
+	.parallax-layer {
+		width: 901px;
+		height: 114;
+		position: absolute;
+		left: 0;
+
+		&#one{
+			top: 78%;
+			left: -15%;
+			animation: motionInOceanOne 5s infinite alternate;
+		}
+
+		&#two{
+			left: -25%;
+			top: 73%;
+			animation: motionInOceanTwo 7s infinite alternate;
+		}
+
+		&#three{
+			left: -20%;
+			top: 69%;
+			animation: motionInOceanThree 11s infinite alternate;
+		}
+
+		&#four{
+			top: 65%;
+			left: -5%;
+			animation: motionInOceanFour 22s infinite alternate;
+		}
+	}
+
+	.mask {
+		position: absolute;
+		background-color: $bg-Color;
+		width: 500px;
+		height: 555px;
+		
+
+		&.Left{
+			left: -71%;
+		}
+		&.Right{
+			right: -71%;
+		}
+	}
+}
+
+
+@keyframes motionInOceanOne {
+	0% {
+	 	left: -25%;
+	}
+
+	100% {
+		left: -1%;
+	}
+}
+
+@keyframes motionInOceanTwo {
+	0% {
+	 	left: -33%;
+	}
+
+	100% {
+		left: -1%;
+	}
+}
+
+@keyframes motionInOceanThree {
+	0% {
+	 	left: -20%;
+	}
+
+	100% {
+		left: -1%;
+	}
+}
+
+@keyframes motionInOceanFour {
+	0% {
+	 	left: -44%;
+	}
+
+	100% {
+		left: -1%;
+	}
+}
+
+
+
+
 
 #container {
 	width: 100%;
 }
 
 section {
-	padding: 5% 15%;
+	width: 100%;
+	padding: 5% 0;
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -27,7 +160,6 @@ p {
 
 	&.copyDrew {
 		text-align: center;
-		
 		margin: 0 auto;
 		margin-top: 15%;
 		line-height: 1.3em;
@@ -44,6 +176,10 @@ p {
 	
 }
 
-svg {
+.skrollr {
+	// width: 950px;
+
+	svg {
 	margin: 0 auto;
+	}
 }
