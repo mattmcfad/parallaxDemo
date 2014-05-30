@@ -12,4 +12,11 @@ $('.img-holder-slow').imageScroll({
     extraHeight: 100,
 });
 
+  skrollr.init({
+    forceHeight: false,
+    smoothScrolling: true,
+    
+
+  });
+
 
