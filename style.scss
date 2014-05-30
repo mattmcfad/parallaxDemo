@@ -13,7 +13,7 @@ body {
 
 	h1 {
 		font-size: 70px;
-		color: $bg-Color;
+		margin-bottom:750px;
 
 	}
 
@@ -51,44 +51,47 @@ body {
 
 #scene {
 	margin: 0 auto;
-	background-color: white;
+	background-color: blue;
 	width: 700px;
 	height: 500px;
 	position: relative;
 
 	.layer {
-		width: 901px;
-		height: 114;
+		
 		position: absolute;
 		left: 0;
 
+		&.boat{
+			animation: rockingDaBoat 2s infinite alternate;
+		}
+
 		&#one{
-			top: 78%;
-			left: -15%;
+			// top: 78%;
+			// left: -15%;
 			animation: motionInOceanOne 5s infinite alternate;
 		}
 
 		&#two{
-			left: -25%;
-			top: 73%;
+			// left: -25%;
+			// top: 73%;
 			animation: motionInOceanTwo 7s infinite alternate;
 		}
 
 		&#three{
-			left: -20%;
-			top: 69%;
+			// left: -20%;
+			// top: 69%;
 			animation: motionInOceanThree 7s infinite alternate;
 		}
 
 		&#four{
-			top: 65%;
-			left: -5%;
+			// top: 65%;
+			// left: -5%;
 			animation: motionInOceanFour 9s infinite alternate;
 		}
 
 		&#five{
-			top: 63%;
-			left: -5%;
+			// top: 63%;
+			// left: -5%;
 			animation: motionInOceanFour 11s infinite alternate;
 		}
 	}
@@ -96,28 +99,42 @@ body {
 	.mask {
 		position: absolute;
 		background-color: $bg-Color;
-		width: 500px;
-		height: 555px;
+		width: 1500px;
+		height: 900px;
+		
 		top: -5%;
 
 		&.Left{
-			left: -71%;
+			left: -214%;
 
 		}
 		&.Right{
-			right: -71%;
+			right: -214%;
 		}
+	}
+}
+
+@keyframes rockingDaBoat {
+	0% {
+		transform: roate(15deg);
+		left: -5%;
+	}
+
+
+	100% {
+		transform: rotate(-9deg);
+		left: 5%;
 	}
 }
 
 
 @keyframes motionInOceanOne {
 	0% {
-	 	left: -25%;
+	 	left: -45%;
 	}
 
 	100% {
-		left: -1%;
+		left: -5%;
 	}
 }
 
@@ -127,7 +144,7 @@ body {
 	}
 
 	100% {
-		left: -1%;
+		left: -5%;
 	}
 }
 
@@ -137,7 +154,7 @@ body {
 	}
 
 	100% {
-		left: -1%;
+		left: -5%;
 	}
 }
 
@@ -147,15 +164,21 @@ body {
 	}
 
 	100% {
-		left: -1%;
+		left: -5%;
 	}
 }
 
 
 
-.headerSpace{
+.headerSpace {
 	padding-top:250px;
 }
+
+.skrollrSpacing {
+	margin: 0;
+}
+
+
 
 #container {
 	width: 100%;

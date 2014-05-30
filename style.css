@@ -15,7 +15,7 @@ body p {
 
 body h1 {
   font-size: 70px;
-  color: #f1c40f;
+  margin-bottom: 750px;
 }
 
 body h2 {
@@ -48,50 +48,43 @@ body .wrapper {
 
 #scene {
   margin: 0 auto;
-  background-color: white;
+  background-color: blue;
   width: 700px;
   height: 500px;
   position: relative;
 }
 
 #scene .layer {
-  width: 901px;
-  height: 114;
   position: absolute;
   left: 0;
 }
 
+#scene .layer.boat {
+  -webkit-animation: rockingDaBoat 2s infinite alternate;
+  animation: rockingDaBoat 2s infinite alternate;
+}
+
 #scene .layer#one {
-  top: 78%;
-  left: -15%;
   -webkit-animation: motionInOceanOne 5s infinite alternate;
   animation: motionInOceanOne 5s infinite alternate;
 }
 
 #scene .layer#two {
-  left: -25%;
-  top: 73%;
   -webkit-animation: motionInOceanTwo 7s infinite alternate;
   animation: motionInOceanTwo 7s infinite alternate;
 }
 
 #scene .layer#three {
-  left: -20%;
-  top: 69%;
   -webkit-animation: motionInOceanThree 7s infinite alternate;
   animation: motionInOceanThree 7s infinite alternate;
 }
 
 #scene .layer#four {
-  top: 65%;
-  left: -5%;
   -webkit-animation: motionInOceanFour 9s infinite alternate;
   animation: motionInOceanFour 9s infinite alternate;
 }
 
 #scene .layer#five {
-  top: 63%;
-  left: -5%;
   -webkit-animation: motionInOceanFour 11s infinite alternate;
   animation: motionInOceanFour 11s infinite alternate;
 }
@@ -99,36 +92,66 @@ body .wrapper {
 #scene .mask {
   position: absolute;
   background-color: #f1c40f;
-  width: 500px;
-  height: 555px;
+  width: 1500px;
+  height: 900px;
   top: -5%;
 }
 
 #scene .mask.Left {
-  left: -71%;
+  left: -214%;
 }
 
 #scene .mask.Right {
-  right: -71%;
+  right: -214%;
+}
+
+@-webkit-keyframes rockingDaBoat {
+  0% {
+    -webkit-transform: roate(15deg);
+    transform: roate(15deg);
+    left: -5%;
+  }
+
+  100% {
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+    left: 5%;
+  }
+}
+
+@keyframes rockingDaBoat {
+  0% {
+    -webkit-transform: roate(15deg);
+    -ms-transform: roate(15deg);
+    transform: roate(15deg);
+    left: -5%;
+  }
+
+  100% {
+    -webkit-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+    left: 5%;
+  }
 }
 
 @-webkit-keyframes motionInOceanOne {
   0% {
-    left: -25%;
+    left: -45%;
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
 @keyframes motionInOceanOne {
   0% {
-    left: -25%;
+    left: -45%;
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -138,7 +161,7 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -148,7 +171,7 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -158,7 +181,7 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -168,7 +191,7 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -178,7 +201,7 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
@@ -188,12 +211,16 @@ body .wrapper {
   }
 
   100% {
-    left: -1%;
+    left: -5%;
   }
 }
 
 .headerSpace {
   padding-top: 250px;
+}
+
+.skrollrSpacing {
+  margin: 0;
 }
 
 #container {
