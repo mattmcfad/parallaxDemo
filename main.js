@@ -1,5 +1,15 @@
-var touch = Modernizr.touch;
+
+
 $('.img-holder').imageScroll({
-  imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-  touch: touch
+    coverRatio: 0.5,
+    speed: 0.2,
+    extraHeight: 0,
 });
+
+$('.img-holder-slow').imageScroll({
+    coverRatio: 0.5,
+    speed: 0.7,
+    extraHeight: 100,
+});
+
+
