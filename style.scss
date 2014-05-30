@@ -35,7 +35,21 @@ body {
 	}
 }
 
-.parallax-viewport {
+
+
+.parallax-viewport { 
+	position:relative; 
+	overflow:hidden; 
+	width:700px; 
+	height:500px; 
+}
+
+.parallax-layer
+      { position:absolute; }
+
+
+
+#parallax-viewport {
 	margin: 0 auto;
 	background-color: white;
 	width: 700px;
@@ -163,7 +177,7 @@ p {
 		margin: 0 auto;
 		margin-top: 15%;
 		line-height: 1.3em;
-		width: 80%;
+		width: 50%;
 		vertical-align: baseline;
 		letter-spacing: 1em;
 		color: #fbb03b;

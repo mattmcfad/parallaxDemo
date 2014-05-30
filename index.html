@@ -21,27 +21,40 @@
 			<h2>Stellar.js</h2>
 
 			
-			<!-- http://stephband.info/jparallax/	 -->
-			<h2>jParallax</h2>
+			<!-- http://stephband.info/jparallax/	 
+			<h2>Parallax.js</h2>
 			
-			<div class="parallax-viewport">
-				<div class="parallax-layer"></div>
-				<div class="parallax-layer" id="four">
+			<div id="parallax-viewport">
+				<div class="parallax-layer"data-depth="0.40" id="four">
 					<img src="media/wave2.png" height="114" width="901" alt="">
 				</div>
-				<div class="parallax-layer" id="three">
+				<div class="parallax-layer"data-depth="0.60" id="three">
 					<img src="media/wave3.png" height="114" width="901" alt="">
 				</div>
-				<div class="parallax-layer" id="two">
+				<div class="parallax-layer"data-depth="0.80" id="two">
 					<img src="media/wave2.png" height="114" width="901" alt="">
 				</div>
-				<div class="parallax-layer" id="one">
+				<div class="parallax-layer" data-depth="1.00"id="one">
 					<img src="media/wave1.png" height="114" width="901" alt="">
 				</div>
 
 				<div class="mask Left"></div>
 
 				<div class="mask Right"></div>
+
+				
+
+			</div><!-- parallax-viewport -->
+
+			
+			<div id="scene">
+				
+					<img class = "layer" data-depth="1.00"src="media/wave1.png" >
+					<img class = "layer" data-depth="0.80"src="media/wave2.png" >
+					<img class = "layer" data-depth="0.60"src="media/wave2.png" >
+					<img class = "layer" data-depth="0.40"src="media/wave3.png" >
+					<img class = "layer" data-depth="0.20"src="media/wave2.png" >
+				
 			</div>
 
 
@@ -84,7 +97,7 @@
 			</section>
 
 			<div class="img-holder-slow" data-image="media/drew-background.jpg">
-			<p class="copyDrew">DIGITAL <br> ADVENTURER</p>
+				<p class="copyDrew">DIGITAL ADVENTURER</p>
 			</div>
 
 
@@ -176,8 +189,19 @@
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		
-		<!-- Modernizr -->
+		<!-- Modernizr 
 		<script src="https://52framework.googlecode.com/svn-history/r36/trunk/js/modernizr-1.7.min.js"></script>
+		-->
+
+		<!-- jParallax 
+		<script src="http://stephband.info/jparallax/js/jquery.parallax.js"></script>
+		<script src="http://stephband.info/jparallax/js/jquery.event.frame.js"></script>
+		-->
+
+
+		<!-- parallax.js -->
+		<script src="http://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
+
 		
 		<!-- jQuery ImageScroll -->
 		<script src = "https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js"></script>

@@ -36,6 +36,17 @@ body .wrapper {
 }
 
 .parallax-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 500px;
+}
+
+.parallax-layer {
+  position: absolute;
+}
+
+#parallax-viewport {
   margin: 0 auto;
   background-color: white;
   width: 700px;
@@ -43,53 +54,53 @@ body .wrapper {
   position: relative;
 }
 
-.parallax-viewport .parallax-layer {
+#parallax-viewport .parallax-layer {
   width: 901px;
   height: 114;
   position: absolute;
   left: 0;
 }
 
-.parallax-viewport .parallax-layer#one {
+#parallax-viewport .parallax-layer#one {
   top: 78%;
   left: -15%;
   -webkit-animation: motionInOceanOne 5s infinite alternate;
   animation: motionInOceanOne 5s infinite alternate;
 }
 
-.parallax-viewport .parallax-layer#two {
+#parallax-viewport .parallax-layer#two {
   left: -25%;
   top: 73%;
   -webkit-animation: motionInOceanTwo 7s infinite alternate;
   animation: motionInOceanTwo 7s infinite alternate;
 }
 
-.parallax-viewport .parallax-layer#three {
+#parallax-viewport .parallax-layer#three {
   left: -20%;
   top: 69%;
   -webkit-animation: motionInOceanThree 11s infinite alternate;
   animation: motionInOceanThree 11s infinite alternate;
 }
 
-.parallax-viewport .parallax-layer#four {
+#parallax-viewport .parallax-layer#four {
   top: 65%;
   left: -5%;
   -webkit-animation: motionInOceanFour 22s infinite alternate;
   animation: motionInOceanFour 22s infinite alternate;
 }
 
-.parallax-viewport .mask {
+#parallax-viewport .mask {
   position: absolute;
   background-color: #f1c40f;
   width: 500px;
   height: 555px;
 }
 
-.parallax-viewport .mask.Left {
+#parallax-viewport .mask.Left {
   left: -71%;
 }
 
-.parallax-viewport .mask.Right {
+#parallax-viewport .mask.Right {
   right: -71%;
 }
 
@@ -199,7 +210,7 @@ p.copyDrew {
   margin: 0 auto;
   margin-top: 15%;
   line-height: 1.3em;
-  width: 80%;
+  width: 50%;
   vertical-align: baseline;
   letter-spacing: 1em;
   color: #fbb03b;
