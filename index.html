@@ -9,53 +9,33 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<h1>Demonstration of Parallax</h1>
+
+			<h1 class="headerSpace">Demonstration of Parallax</h1>
+			<div class="titles">
+				<img class = "layer" src="media/title3.png" data-depth="0.6">
+				<img class = "layer" src="media/title2.png" data-depth="0.8">
+				<img class = "layer" src="media/title1.png" data-depth="1.0">
+			</div>
+
 			<h4>by Matt McFadyen</h4>
 
 			
-			
-			<h2>Skrollr</h2>
-		
-			
-
-			<h2>Stellar.js</h2>
-
-			
-			<!-- http://stephband.info/jparallax/	 
-			<h2>Parallax.js</h2>
-			
-			<div id="parallax-viewport">
-				<div class="parallax-layer"data-depth="0.40" id="four">
-					<img src="media/wave2.png" height="114" width="901" alt="">
-				</div>
-				<div class="parallax-layer"data-depth="0.60" id="three">
-					<img src="media/wave3.png" height="114" width="901" alt="">
-				</div>
-				<div class="parallax-layer"data-depth="0.80" id="two">
-					<img src="media/wave2.png" height="114" width="901" alt="">
-				</div>
-				<div class="parallax-layer" data-depth="1.00"id="one">
-					<img src="media/wave1.png" height="114" width="901" alt="">
-				</div>
-
+			<h2 class="headerSpace">Parallax.js</h2>
+			<div id="scene">
+				
+					<img class = "layer" id="one" data-depth="0.9"src="media/wave1.png" >
+					<img class = "layer" id="two" data-depth="0.70"src="media/wave2.png" >
+					<img class = "layer" id="three"data-depth="0.50"src="media/wave2.png" >
+					<img class = "layer" id="four" data-depth="0.30"src="media/wave3.png" >
+					<img class = "layer" id="five"data-depth="0.10"src="media/wave2.png" >
 				<div class="mask Left"></div>
 
 				<div class="mask Right"></div>
-
-				
-
-			</div><!-- parallax-viewport -->
-
-			
-			<div id="scene">
-				
-					<img class = "layer" data-depth="1.00"src="media/wave1.png" >
-					<img class = "layer" data-depth="0.80"src="media/wave2.png" >
-					<img class = "layer" data-depth="0.60"src="media/wave2.png" >
-					<img class = "layer" data-depth="0.40"src="media/wave3.png" >
-					<img class = "layer" data-depth="0.20"src="media/wave2.png" >
 				
 			</div>
+
+				
+
 
 
 
@@ -65,7 +45,7 @@
 
 			<!-- https://github.com/pederan/Parallax-ImageScroll -->
 			<!-- cdpn http://codepen.io/pederan/pen/Hheuy -->
-			<h2>Parallax Image Scroll</h2>
+			<h2 class="headerSpace">imageScroll.js</h2>
 
 
 			<div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900">
@@ -193,11 +173,7 @@
 		<script src="https://52framework.googlecode.com/svn-history/r36/trunk/js/modernizr-1.7.min.js"></script>
 		-->
 
-		<!-- jParallax 
-		<script src="http://stephband.info/jparallax/js/jquery.parallax.js"></script>
-		<script src="http://stephband.info/jparallax/js/jquery.event.frame.js"></script>
-		-->
-
+		<script src="https://raw.githubusercontent.com/vonKristoff/starscroll/master/starscroll.js"></script>
 
 		<!-- parallax.js -->
 		<script src="http://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
@@ -208,6 +184,8 @@
 		
 		<!-- Skrollr -->
 		<script src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+		
+
 
 		<script src= "main.js"></script>
 	</body>

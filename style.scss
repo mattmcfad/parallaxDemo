@@ -13,6 +13,7 @@ body {
 
 	h1 {
 		font-size: 70px;
+		color: $bg-Color;
 
 	}
 
@@ -36,27 +37,26 @@ body {
 }
 
 
-
-.parallax-viewport { 
-	position:relative; 
-	overflow:hidden; 
-	width:700px; 
-	height:500px; 
+.titles {
+	position: relative;
+	width: 100%;
+	height: auto;
+	.layer {
+		position: absolute;
+	}
 }
 
-.parallax-layer
-      { position:absolute; }
 
 
 
-#parallax-viewport {
+#scene {
 	margin: 0 auto;
 	background-color: white;
 	width: 700px;
 	height: 500px;
 	position: relative;
 
-	.parallax-layer {
+	.layer {
 		width: 901px;
 		height: 114;
 		position: absolute;
@@ -77,13 +77,19 @@ body {
 		&#three{
 			left: -20%;
 			top: 69%;
-			animation: motionInOceanThree 11s infinite alternate;
+			animation: motionInOceanThree 7s infinite alternate;
 		}
 
 		&#four{
 			top: 65%;
 			left: -5%;
-			animation: motionInOceanFour 22s infinite alternate;
+			animation: motionInOceanFour 9s infinite alternate;
+		}
+
+		&#five{
+			top: 63%;
+			left: -5%;
+			animation: motionInOceanFour 11s infinite alternate;
 		}
 	}
 
@@ -92,10 +98,11 @@ body {
 		background-color: $bg-Color;
 		width: 500px;
 		height: 555px;
-		
+		top: -5%;
 
 		&.Left{
 			left: -71%;
+
 		}
 		&.Right{
 			right: -71%;
@@ -146,7 +153,9 @@ body {
 
 
 
-
+.headerSpace{
+	padding-top:250px;
+}
 
 #container {
 	width: 100%;

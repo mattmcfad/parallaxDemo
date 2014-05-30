@@ -2,6 +2,8 @@
 
 //Image Scroll
 
+
+//imageScroll.js
 $('.img-holder').imageScroll({
     coverRatio: 0.5,
     speed: 0.2,
@@ -21,24 +23,12 @@ skrollr.init({
     smoothScrolling: true,
 });
 
+$('.titles').parallax({
+
+});
 
 
-// jQuery(document).ready(function() {
-
-//   $('.parallax-layer').parallax({
-//     mouseport: $('.parallax-viewport')
-//   });
-// });
-
-
-
-// //parallax.js
-
-// // var scene = document.getElementById('parallax-viewport');
-// // var parallax = new Parallax(scene, {
-
-// // });
-
+//Parallax.js
 $('#scene').parallax({
     // calibrateX: false,
     // calibrateY: true,
@@ -53,5 +43,8 @@ $('#scene').parallax({
     // originX: 0.0,
     // originY: 1.0
 });
+
+//StarScroll
+$('.wrapper').starscroll(16,3,50,5);
 
 
